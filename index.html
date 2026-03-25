@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework Tracker</title>
+    <link rel="stylesheet" href="styles.css" id="css">
+</head>
+
+<body>
+    <h1>Homework Tracker</h1>
+    <div class="table-button-container">
+        <table id="table">
+            <tr class="headings">
+                <th>Due</th>
+                <th>Subject</th>
+                <th>Assignment Name</th>
+                <th>Completed</th>
+            </tr>
+            <tr>
+                <td><input type="date"></td>
+                <td><input value="Subject" type="text"></td>
+                <td><input value="Name" type="text"></td>
+                <td><input type="checkbox" id="row1" name="row1" value="completed"></td>
+            </tr>
+        </table>
+        <div class="others">
+            <div id="buttons">
+                <button id="save">Save</button>
+                <button id="open">Open</button>
+                <button id="enter">Enter</button>
+            </div>
+            <label id="switch">
+                <input type="checkbox" onchange="checkState()" id="toggleinput">
+                <span class="slider round"></span>
+            </label>
+            <label id="egyptianlabel">Egyptian Mode</label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
